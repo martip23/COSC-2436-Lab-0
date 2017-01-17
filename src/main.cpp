@@ -11,30 +11,35 @@ int main(int argc, char**argv)
     const int QUIT      = 1;
     
     //Prototypes
-    void genMenu();
+    int menu();
 
     //Declare Arrays
     Student studentList[NUMSTUDENTS];
 
-    while(choice != 0 || choice != 1) {
-        cin.clear();
+    //WELCOME MESSAGE
+    cout << "Starting Program..." << endl;
+    cout << "WELCOME TO STUDENT PROGRAM 100.1" << endl;
 
-        cout << "Starting Program..." << endl;
-        cout << "WELCOME TO STUDENT PROGRAM 100.1" << endl;
+    while(choice != QUIT) {
         cout << "PLEASE CHOOSE FROM THE FOLLOWING OPTIONS" << endl;
-        genMenu();
-        cin >> choice;
-
-    
+        choice = menu();
+        if (choice == SEARCH) {
+            cout << "FUNCTION TO GO HERE" << endl;
+        }
     }
+
+    cout << "\n\nTHANK YOU FOR USING PROGRAM" << endl;
 
     return 0;
 }
 
-void genMenu()
+int menu()
 {
-    cout << "\n\n\n\n\n";
+    int choice;
+    cout << "\n\n";
     cout << "~~~~~~~~MENU~~~~~~~~~" << endl;
     cout << "0: SEARCH FOR STUDENT" << endl;
     cout << "1: QUIT THIS PROGRAM ";
+    cin >> choice;
+    return choice;
 }
