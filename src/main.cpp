@@ -17,9 +17,11 @@ int main(int argc, char**argv)
     Student studentList[NUMSTUDENTS];
 
     while(choice != 0 || choice != 1) {
-        cout << "Starting Program...";
-        cout << "WELCOME TO STUDENT PROGRAM 100.1";
-        cout << "PLEASE CHOOSE FROM THE FOLLOWING OPTIONS";
+        cin.clear();
+
+        cout << "Starting Program..." << endl;
+        cout << "WELCOME TO STUDENT PROGRAM 100.1" << endl;
+        cout << "PLEASE CHOOSE FROM THE FOLLOWING OPTIONS" << endl;
         genMenu();
         cin >> choice;
 
@@ -31,7 +33,8 @@ int main(int argc, char**argv)
 
 void genMenu()
 {
-    cout << "~~~~~~~~MENU~~~~~~~~~"
-    cout << "0: SEARCH FOR STUDENT"
-    cout << "1: QUIT THIS PROGRAM "
+    cout << "\n\n\n\n\n";
+    cout << "~~~~~~~~MENU~~~~~~~~~" << endl;
+    cout << "0: SEARCH FOR STUDENT" << endl;
+    cout << "1: QUIT THIS PROGRAM ";
 }

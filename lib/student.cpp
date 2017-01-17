@@ -7,8 +7,8 @@ using namespace std;
 //Student Constructor, set to default values
 Student::Student() 
 {
-    cout << "Student created with default values/n";
-    cout << "Please set default values";
+    cout << "Student created with default values\n";
+    cout << "Please set default values\n";
     this->name  = "John Doe";
     this->id    = 0000;
 }
