@@ -7,8 +7,6 @@ using namespace std;
 //Student Constructor, set to default values
 Student::Student() 
 {
-    cout << "Student created with default values\n";
-    cout << "Please set default values\n";
     this->name  = "John Doe";
     this->id    = 0000;
 }
@@ -25,11 +23,11 @@ void Student::setData(string name)
 
 int Student::getId()
 {
-    return id;
+    return this->id;
 }
 
 string Student::getName()
 {
-    return name;
+    return this->name;
 }
 
